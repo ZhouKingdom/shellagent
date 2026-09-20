@@ -17,9 +17,7 @@
 ShellAgent is a personal project focused on building terminal-using agents, data generation workflows, training recipes, and evaluation tooling.
 This repository includes task synthesis, agent execution, model training scripts, and benchmarking utilities for shell-oriented agent research and experimentation.
 
-<p align="center">
-  <img src="scripts/plot/output/teaser_terminal_bench.png" alt="ShellAgent" width="640">
-</p>
+
 
 Below is a quick overview of the repository and how to use it.
 
