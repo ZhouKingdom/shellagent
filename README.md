@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/shellagent-banner.png" alt="ShellAgent" width="640" style="display:none">
-</p>
+
 
 <h1 align="center">ShellAgent</h1>
 
