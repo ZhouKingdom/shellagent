@@ -1,33 +1,30 @@
 <p align="center">
-  <img src="assets/shellagent-banner.png" alt="ShellAgent" width="640">
+  <img src="assets/shellagent-banner.png" alt="ShellAgent" width="640" style="display:none">
+</p>
+
+<h1 align="center">ShellAgent</h1>
+
+<p align="center">
+  <em>Terminal-first agent tooling and training pipelines.</em>
 </p>
 
 <p align="center">
-  <em>Simple terminal-using agents.</em>
-</p>
-
-<p align="center">
-  💻 <a href="https://github.com/hamishivi/shellagent">Code</a> ·
-  🤗 <a href="https://huggingface.co/collections/allenai/shellagent">Models &amp; Data</a> ·
-  📜 <a href="https://arxiv.org/abs/2606.23321">Paper</a> ·
-  📓 <a href="https://wai-org.com/blog/shellagent/">Blog</a>
+  💻 <a href="https://github.com/ZhouKingdom/shellagent">Code</a>
 </p>
 
 ---
 
-ShellAgent is our project around training simple, powerful terminal using agents. This codebase covers data generation, training, and evaluation.
-We use this to train our 'shellagent' series of models, with strong performance as shown below! Please refer to our [paper](https://arxiv.org/abs/2606.23321) for more details.
-
+ShellAgent is a personal project focused on building terminal-using agents, data generation workflows, training recipes, and evaluation tooling.
+This repository includes task synthesis, agent execution, model training scripts, and benchmarking utilities for shell-oriented agent research and experimentation.
 
 <p align="center">
   <img src="scripts/plot/output/teaser_terminal_bench.png" alt="ShellAgent" width="640">
 </p>
 
-
-Below, we give a quick overview of the codebase and how to use it.
+Below is a quick overview of the repository and how to use it.
 
 ### News
-- Initial release of the codebase and models! Please read [our paper](https://arxiv.org/abs/2606.23321) for more details.
+- Initial project setup and repository rename to ShellAgent.
 
 
 
