@@ -1,18 +1,12 @@
 <h1 align="center">ShellAgent</h1>
 
-<p align="center">
-  <img src="assets/shellagent-banner.png" alt="ShellAgent banner" width="100%">
-</p>
+
 
 <p align="center">
   <em>一套简单而强大的终端 Agent 配方：数据生成 → Agent 实现 → 模型训练 → 评估</em>
 </p>
 
-<p align="center">
-  💻 <a href="https://github.com/ZhouKingdom/shellagent">代码仓库</a> ·
-  📄 <a href="https://arxiv.org/abs/2606.23321">论文 arXiv:2606.23321</a> ·
-  🤗 <a href="https://huggingface.co/allenai">allenai / shellagent</a>
-</p>
+
 
 ---
 
@@ -166,22 +160,7 @@ uv run harbor run \
   --job-name shellagent-9b-tb2
 ```
 
-## 公开数据集：ShellAgent-15K-Harbor
 
-完整的 **15K** 任务语料已发布到 [Harbor 注册表](https://www.harborframework.com/docs/datasets)：
-**[`shellagent/ShellAgent-15K-Harbor`](https://hub.harborframework.com/datasets/shellagent/ShellAgent-15K-Harbor/latest)**（公开）。
-
-包含 legacy 的 10k 自包含任务 + 5k 新的 *intricate* 多模态任务。每个任务都是一个自包含的 Harbor 环境并自带程序化验证器，无需重新生成或构建：
-
-```bash
-# 用 Daytona 云沙箱跑 10 个任务的子集（无需本地 Docker）
-export DAYTONA_API_KEY='xxx'
-uv run harbor run -d "shellagent/ShellAgent-15K-Harbor@latest" \
-    --agent terminus-2 --model "<model>" \
-    --env daytona -l 10
-```
-
-去掉 `-l` 跑全集，或用 `-i` / `-x` 按任务名包含/排除。每个任务的 reward 与 Agent/验证器日志写在 `jobs/<job-name>/` 下。更多运行选项见 [`rl_data/README.md`](rl_data/README.md)。
 
 ## 环境要求
 
@@ -214,22 +193,5 @@ source scripts/setup_podman_harbor.sh
 | [`SFT复现操作文档.md`](SFT复现操作文档.md) | SFT 训练复现步骤（中文） |
 | [`笔记.md`](笔记.md) | 任务生成流程复现记录（中文） |
 
-## 许可
 
-本项目基于 Apache 2.0 许可，详见 [LICENSE](LICENSE)。
 
-## 引用
-
-如果本项目或相关模型对你的研究有帮助，请引用我们的论文：
-
-```bibtex
-@misc{ivison2026shellagentsimplerecipeterminal,
-      title={ShellAgent: A simple recipe for terminal agents},
-      author={Hamish Ivison and Junjie Oscar Yin and Rulin Shao and Teng Xiao and Nathan Lambert and Hannaneh Hajishirzi},
-      year={2026},
-      eprint={2606.23321},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2606.23321},
-}
-```
