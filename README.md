@@ -189,9 +189,6 @@ source scripts/setup_podman_harbor.sh
 | [`rl_data/scripts/README.md`](rl_data/scripts/README.md) | 数据管线各阶段启动脚本 |
 | [`training/open-instruct/scripts/shellagent/README.md`](training/open-instruct/scripts/shellagent/README.md) | 训练脚本解读与运行方式 |
 | [`scripts/beaker/README.md`](scripts/beaker/README.md) | Beaker 评估流程与 Harbor 补丁说明 |
-| [`项目文档.md`](项目文档.md) | 项目架构与完整路径树（中文） |
-| [`SFT复现操作文档.md`](SFT复现操作文档.md) | SFT 训练复现步骤（中文） |
-| [`笔记.md`](笔记.md) | 任务生成流程复现记录（中文） |
 
 
 
